@@ -62,7 +62,7 @@ nav {
 
 .header {
     height: calc(100vh - 6rem);
-    background-image: linear-gradient(to right, rgba($color-dark, .5), rgba($color-dark, .5)), url(../images/showcase.jpg);
+    background-image: linear-gradient(to right, rgba($color-dark, .8), rgba($color-dark, .8)), url(../images/showcase.jpg);
     background-size: cover;
     background-position: center;
 
@@ -111,6 +111,12 @@ nav {
 .about {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+    .img-div {
+        @media screen and (max-width: $bp-phone) {
+            height: 46rem;
+        }
+    }
 
     .text-div {
         background-color: $color-dark;
