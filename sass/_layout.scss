@@ -1,0 +1,140 @@
+nav {
+    position: sticky;
+    z-index: 50;
+    top: 0;
+    background-color: rgba($color-dark, .9);
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    @media screen and (max-width: $bp-phone) {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        & .logo {
+            margin: 2rem 0;
+        }
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+
+        li {
+            padding: 1rem;
+            transition: all .2s;
+            border-radius: 8px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-primary;
+
+            }
+
+            &:not(:last-child) {
+                margin-right: 2rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            &:hover a {
+                color: $color-dark;
+            }
+        }
+    }
+}
+
+.header {
+    height: calc(100vh - 6rem);
+    background-image: linear-gradient(to right, rgba($color-dark, .5), rgba($color-dark, .5)), url(../images/showcase.jpg);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: $bp-phone) {
+        height: 80vh;
+    }
+
+    &__text-box {
+        text-align: center;
+        font-size: 1.6rem;
+        color: white;
+
+        h1 {
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 2rem;
+            margin-bottom: 1.4rem;
+        }
+    }
+}
+
+.services {
+    padding: 2rem;
+
+    h2 {
+        text-align: center;
+        color: $color-dark;
+
+    }
+
+    .f-container {
+        max-width: 1140px;
+        margin: 2rem auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+}
+
+// about
+.about {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+
+    .text-div {
+        background-color: $color-dark;
+        padding: 3rem;
+        color: white;
+
+        display: grid;
+        grid-row-gap: 1rem;
+    }
+}
+
+.clients {
+    padding: 4rem 0;
+
+    h2 {
+        margin-bottom: 4rem;
+    }
+}
+
+// footer
+.footer {
+    background-color: $color-dark;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: .7rem 0;
+}

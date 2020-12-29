@@ -1,0 +1,76 @@
+.btn {
+    border: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 1.5rem 2.5rem;
+    border-radius: 7px;
+    cursor: pointer;
+
+    &--green {
+        background-color: rgba($color-primary, .95);
+        color: $color-dark;
+        transition: all .2s;
+
+        &:hover {
+            background-color: rgba($color-primary, 1);
+            transform: translateY(-2px);
+        }
+    }
+
+    &--dark {
+        background-color: $color-dark;
+    }
+}
+
+.service-box {
+
+    font-size: 1.6rem;
+    padding: 2rem;
+    color: $color-dark;
+
+    display: grid;
+    grid-row-gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: start;
+
+
+    &__icon {
+        background-color: $color-primary;
+        padding: 1.5rem;
+        border-radius: 50%;
+    }
+
+}
+
+
+.img-div {
+    background-image: url(../images/people.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.list {
+    list-style: none;
+    font-size: 1.6rem;
+
+    &__item {
+        padding: .7rem 0;
+        border-bottom: 1px dotted rgba(white, .2);
+    }
+}
+
+.logos {
+    max-width: 1140px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    justify-items: center;
+
+    img {
+        max-height: 6vw;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,55 @@
+$color-primary: #93cb52;
+$color-dark: #333333;
+
+$bp-phone: 600px;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $bp-phone) {
+        font-size: 50%;
+    }
+}
+
+body {
+    box-sizing: inherit;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+// text primary
+.text-primary {
+    color: $color-primary;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// Headings 
+.heading-1 {
+    font-size: 6.5rem;
+    font-weight: 400
+}
+
+.heading-2 {
+    font-size: 3.5rem;
+}
+
+.heading-3 {
+    font-size: 2.2rem;
+}
